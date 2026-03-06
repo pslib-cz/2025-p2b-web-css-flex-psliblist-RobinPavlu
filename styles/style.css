@@ -19,6 +19,7 @@ body > .container {
 
 .news-item {
     flex-shrink: 0;
+    display: flex;
 }
 
 /* datum je vystředěno ve čtverci o hraně 116px, mezi měsícem a dnem je "--color-bg-pink" linka, pod dnem je "--category-accent" linka */
@@ -104,20 +105,17 @@ body > .container {
 /* barvy kategorií reagují na modifikátory */
 
 .news-item--school {
-    display: flex;
     --category-accent: var(--color-accent2);
     --category-text: var(--color-accent2);
 }
 
 .news-item--engineering {
-    display: flex;
     --category-accent: var(--color-accent3);
     --category-text: var(--color-accent3);
     
 }
 
 .news-item--success {
-    display: flex;
     --category-accent: var(--color-accent4);
     --category-text: var(--color-accent4);
 }
